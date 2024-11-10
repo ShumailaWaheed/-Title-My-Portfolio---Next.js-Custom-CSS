@@ -50,7 +50,7 @@ const Testimonial = () => {
   };
 
   return (
-    <section className="testimonial mt-5 pt-5" id="testimonial">
+    <section className="testimonial mt-4 pt-5" id="testimonial">
       <div className="row align-items-center">
         <div className="col-md-4 col-12 image-container text-center text-md-start">
           <Image
@@ -71,8 +71,6 @@ const Testimonial = () => {
               <h4>{testimonials[currentIndex].name}</h4>
               <small className="fs-6 text-muted">{testimonials[currentIndex].position}</small>
             </div>
-
-            {/* Carousel Controls */}
             <div className="carousel-controls">
               <button className="prev-btn" onClick={handlePrev}>
                 &lt;

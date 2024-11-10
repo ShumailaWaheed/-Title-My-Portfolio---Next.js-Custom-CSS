@@ -1,5 +1,3 @@
-// src/components/Expertise.tsx
-
 import React from 'react';
 import { FaPaintBrush, FaUserAlt, FaMobileAlt } from 'react-icons/fa';
 
@@ -14,7 +12,6 @@ const Expertise = () => {
         </h3>
       </div>
       <div className="service-cards">
-        {/* Web Design Card */}
         <div className="service-card" data-aos="fade-up">
           <div className="icon-circle">
             <FaPaintBrush size={60} color="#333" />
@@ -28,7 +25,6 @@ const Expertise = () => {
           </div>
         </div>
 
-        {/* UI/UX Design Card */}
         <div className="service-card" data-aos="fade-up">
           <div className="icon-circle">
             <FaUserAlt size={60} color="#333" />
@@ -42,7 +38,6 @@ const Expertise = () => {
           </div>
         </div>
 
-        {/* Responsive Design Card */}
         <div className="service-card" data-aos="fade-up">
           <div className="icon-circle">
             <FaMobileAlt size={60} color="#333" />

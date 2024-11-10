@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaGlobe } from "react-icons/fa"; 
 
 const ContactSection = () => {
-  // Scroll to top functionality
   useEffect(() => {
     const backToTopButton = document.getElementById("btn-back-to-top");
 

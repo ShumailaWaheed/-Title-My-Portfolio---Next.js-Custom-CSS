@@ -25,7 +25,8 @@ export default function Blog() {
                 <a href="#">Exploring Innovative Food Trends in 2022</a>
               </h4>
               <p className="text-muted">
-                Discover the latest advancements in culinary arts, from sustainable ingredients to fusion dishes that blend cultural flavors.
+                Discover the latest advancements in culinary arts, from sustainable ingredients to fusion dishes 
+                that blend cultural flavors.
               </p>
               <button className="read-more-btn link" onClick={() => setModal1(true)}>
                 Read More
@@ -63,7 +64,8 @@ export default function Blog() {
                 <a href="#">Trends in Mobile Gaming for 2022</a>
               </h4>
               <p className="text-muted">
-                Delve into the emerging trends in mobile gaming, highlighting new technologies and user engagement tactics in the industry.
+                Delve into the emerging trends in mobile gaming, highlighting new technologies and user engagement 
+                tactics in the industry.
               </p>
               <button className="read-more-btn link" onClick={() => setModal3(true)}>
                 Read More
