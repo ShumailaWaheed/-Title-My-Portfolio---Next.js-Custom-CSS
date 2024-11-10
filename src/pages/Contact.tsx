@@ -45,7 +45,7 @@ const ContactSection = () => {
               <FaMapMarkerAlt size={30} />
             </div>
             <div className="col-11">
-              <p>121 King Street Melbourne, 3000, Australia</p>
+              <p>Orangi Town, Sec-10 Karachi, Pakkstan</p>
             </div>
           </div>
           <div className="row justify-content-evenly">
@@ -53,7 +53,7 @@ const ContactSection = () => {
               <FaPhoneAlt size={30} />
             </div>
             <div className="col-11">
-              <p>+91 9527818693</p>
+              <p>+92 3151156286</p>
             </div>
           </div>
           <div className="row justify-content-evenly">
@@ -61,7 +61,7 @@ const ContactSection = () => {
               <FaEnvelope size={30} />
             </div>
             <div className="col-11">
-              <p>codewithpawan@gmail.com</p>
+              <p>shumaila@gmail.com</p>
             </div>
           </div>
           <div className="row justify-content-evenly">
