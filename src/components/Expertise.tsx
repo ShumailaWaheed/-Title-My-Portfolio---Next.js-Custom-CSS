@@ -24,7 +24,10 @@ const Expertise = () => {
             <a href="#" className="link">Read More</a>
           </div>
         </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 29125ad (Enhanced Portfolio Styling)
         <div className="service-card" data-aos="fade-up">
           <div className="icon-circle">
             <FaUserAlt size={60} color="#333" />
@@ -37,7 +40,10 @@ const Expertise = () => {
             <a href="#" className="link">Read More</a>
           </div>
         </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 29125ad (Enhanced Portfolio Styling)
         <div className="service-card" data-aos="fade-up">
           <div className="icon-circle">
             <FaMobileAlt size={60} color="#333" />
@@ -56,4 +62,7 @@ const Expertise = () => {
 };
 
 export default Expertise;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 29125ad (Enhanced Portfolio Styling)

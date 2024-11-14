@@ -22,7 +22,10 @@ const ContactSection = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
       });
 
+<<<<<<< HEAD
       // Cleanup function
+=======
+>>>>>>> 29125ad (Enhanced Portfolio Styling)
       return () => {
         window.removeEventListener("scroll", handleScroll);
         backToTopButton.removeEventListener("click", () => {
@@ -45,7 +48,11 @@ const ContactSection = () => {
               <FaMapMarkerAlt size={30} />
             </div>
             <div className="col-11">
+<<<<<<< HEAD
               <p>Orangi Town, Sec-10 Karachi, Pakkstan</p>
+=======
+              <p>Orangi Town Sec-10 Karachi, Pakistan</p>
+>>>>>>> 29125ad (Enhanced Portfolio Styling)
             </div>
           </div>
           <div className="row justify-content-evenly">
@@ -61,7 +68,11 @@ const ContactSection = () => {
               <FaEnvelope size={30} />
             </div>
             <div className="col-11">
+<<<<<<< HEAD
               <p>shumaila@gmail.com</p>
+=======
+              <p>shumailawaheed253@gmail.com</p>
+>>>>>>> 29125ad (Enhanced Portfolio Styling)
             </div>
           </div>
           <div className="row justify-content-evenly">
@@ -69,7 +80,11 @@ const ContactSection = () => {
               <FaGlobe size={30} />
             </div>
             <div className="col-11">
+<<<<<<< HEAD
               <p>codingpawan.com</p>
+=======
+              <p>coding.com</p>
+>>>>>>> 29125ad (Enhanced Portfolio Styling)
             </div>
           </div>
         </div>
