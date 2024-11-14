@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "name": "milestone-02",
-=======
-  "name": "milestone-2-03",
->>>>>>> 29125ad (Enhanced Portfolio Styling)
+  "name": "milestone-2-0",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -17,12 +13,7 @@
     "aos": "^2.3.4",
     "next": "14.2.14",
     "react": "^18",
-<<<<<<< HEAD
-    "react-dom": "^18",
-    "sharp": "^0.33.5"
-=======
     "react-dom": "^18"
->>>>>>> 29125ad (Enhanced Portfolio Styling)
   },
   "devDependencies": {
     "@types/aos": "^3.0.7",

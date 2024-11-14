@@ -1,9 +1,17 @@
 "use client";
 
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaGlobe } from "react-icons/fa"; 
 
-const ContactSection = () => {
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    mobile: "",
+    message: "",
+  });
+  const [errorMessage, setErrorMessage] = useState<string>("");
+
   useEffect(() => {
     const backToTopButton = document.getElementById("btn-back-to-top");
 
@@ -22,10 +30,6 @@ const ContactSection = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
       });
 
-<<<<<<< HEAD
-      // Cleanup function
-=======
->>>>>>> 29125ad (Enhanced Portfolio Styling)
       return () => {
         window.removeEventListener("scroll", handleScroll);
         backToTopButton.removeEventListener("click", () => {
@@ -34,6 +38,25 @@ const ContactSection = () => {
       };
     }
   }, []);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { id, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [id]: value,
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!formData.name || !formData.email || !formData.mobile || !formData.message) {
+      setErrorMessage("Please fill out all fields before submitting.");
+      return;
+    }
+
+    setErrorMessage(""); 
+    alert("Form submitted successfully!");
+  };
 
   return (
     <section className="contact py-5" id="contact">
@@ -48,11 +71,7 @@ const ContactSection = () => {
               <FaMapMarkerAlt size={30} />
             </div>
             <div className="col-11">
-<<<<<<< HEAD
-              <p>Orangi Town, Sec-10 Karachi, Pakkstan</p>
-=======
               <p>Orangi Town Sec-10 Karachi, Pakistan</p>
->>>>>>> 29125ad (Enhanced Portfolio Styling)
             </div>
           </div>
           <div className="row justify-content-evenly">
@@ -68,11 +87,7 @@ const ContactSection = () => {
               <FaEnvelope size={30} />
             </div>
             <div className="col-11">
-<<<<<<< HEAD
-              <p>shumaila@gmail.com</p>
-=======
               <p>shumailawaheed253@gmail.com</p>
->>>>>>> 29125ad (Enhanced Portfolio Styling)
             </div>
           </div>
           <div className="row justify-content-evenly">
@@ -80,11 +95,7 @@ const ContactSection = () => {
               <FaGlobe size={30} />
             </div>
             <div className="col-11">
-<<<<<<< HEAD
-              <p>codingpawan.com</p>
-=======
               <p>coding.com</p>
->>>>>>> 29125ad (Enhanced Portfolio Styling)
             </div>
           </div>
         </div>
@@ -94,34 +105,47 @@ const ContactSection = () => {
               <input
                 type="text"
                 className="form-control"
-                id="exampleFormControlInput1"
+                id="name"
                 placeholder="Name"
+                value={formData.name}
+                onChange={handleChange}
               />
             </div>
             <div className="mb-3">
               <input
                 type="email"
                 className="form-control"
-                id="exampleFormControlInput1"
+                id="email"
                 placeholder="E-mail"
+                value={formData.email}
+                onChange={handleChange}
               />
             </div>
             <div className="mb-3">
               <input
                 type="text"
                 className="form-control"
-                id="exampleFormControlInput1"
+                id="mobile"
                 placeholder="Mobile No."
+                value={formData.mobile}
+                onChange={handleChange}
               />
             </div>
             <div className="mb-3">
               <textarea
                 className="form-control"
-                id="exampleFormControlTextarea1"
+                id="message"
                 placeholder="Message"
+                value={formData.message}
+                onChange={handleChange}
               ></textarea>
             </div>
-            <button className="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+
+            {errorMessage && (
+              <div className="alert alert-danger">{errorMessage}</div>
+            )}
+
+            <button className="c-btn h-btn mt-3 py-3 px-5 rounded-pill" onClick={handleSubmit}>
               Submit
             </button>
           </div>
@@ -138,4 +162,4 @@ const ContactSection = () => {
   );
 };
 
-export default ContactSection;
+export default Contact;

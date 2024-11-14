@@ -2,9 +2,9 @@
 
 import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
-import banner from '/public/images/profile-01.png'; 
+import banner from '/public/images/profile-01.png';
 
-const HomeSection = () => {
+const Home = () => {
   const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -31,13 +31,7 @@ const HomeSection = () => {
             <span className="highlight-text">Shumaila Waheed</span>
           </h2>
           <p className="home-description">
-<<<<<<< HEAD
-            I&apos;m a Web Developer with 2 years of experience, 
-            specializing in creating fully responsive websites, including backend development.
-=======
-            I'm a Web Developer with 2 years of experience, specializing in creating fully responsive websites, 
-            including backend development.
->>>>>>> 29125ad (Enhanced Portfolio Styling)
+            I&apos;m a Web Developer with 2 years of experience, specializing in creating fully responsive websites, including backend development.
           </p>
           <button className="h-btn">Hire Me</button>
         </div>
@@ -49,9 +43,4 @@ const HomeSection = () => {
   );
 };
 
-export default HomeSection;
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 29125ad (Enhanced Portfolio Styling)
+export default Home;
