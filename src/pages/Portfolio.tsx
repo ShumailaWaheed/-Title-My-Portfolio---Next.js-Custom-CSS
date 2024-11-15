@@ -90,7 +90,6 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-
           <div className={`post col-md-4 ${filter === "all" || filter === "website" ? "show" : "hide"} website all col-10 mt-3 mt-md-0`} data-aos="fade-up">
             <div className="card">
               <Image src="/images/to-dp-list.jpg" width={500} height={300} className="card-img-top" alt="TicTacToe Game" />
@@ -104,7 +103,6 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-
           <div className={`post col-md-4 ${filter === "all" || filter === "webapp" ? "show" : "hide"} all col-10 mt-3 mt-md-0`} data-aos="fade-up">
             <div className="card">
               <Image src="/images/learning-app.png" width={500} height={300} className="card-img-top" alt="Lang Translator App" />

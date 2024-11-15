@@ -5,6 +5,7 @@ import Image from 'next/image';
 
 export default function Blog() {
   const [modal1, setModal1] = useState(false);
+  const [modal2, setModal2] = useState(false);
 
   return (
     <section className="blog mt-5 pb-5" id="blog">
@@ -23,10 +24,10 @@ export default function Blog() {
               height={300} 
             />
             <div className="card-body px-4">
-              <small>By Pawan Kumavat</small>
-              <span className="ms-3">Mar 8, 2022</span>
+              <small>By Shumaila Waheed</small>
+              <span className="ms-3">Mar 8, 2024</span>
               <h4 className="card-title">
-                <a href="#">Exploring Innovative Food Trends in 2022</a>
+                <a href="#">Exploring Innovative Food Trends in 2024</a>
               </h4>
               <p className="text-muted">
                 Discover the latest advancements in culinary arts, from sustainable ingredients to fusion dishes 
@@ -38,9 +39,6 @@ export default function Blog() {
             </div>
           </div>
         </div>
-
-        {/* Other blog posts (with Image optimization) */}
-        {/* Example for the second blog post */}
         <div className="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
           <div className="card">
             <Image 
@@ -51,22 +49,44 @@ export default function Blog() {
               height={300} 
             />
             <div className="card-body px-4">
-              <small>By Pawan Kumavat</small>
-              <span className="ms-3">Mar 8, 2022</span>
+              <small>By Shumaila Waheed</small>
+              <span className="ms-3">Mar 8, 2024</span>
               <h4 className="card-title">
                 <a href="#">Digital Transformation in Finance</a>
               </h4>
               <p className="text-muted">
                 Learn how digital solutions like currency converters are revolutionizing financial processes for users worldwide.
               </p>
-              <button className="read-more-btn link" onClick={() => setModal1(true)}>
+              <button className="read-more-btn link" onClick={() => setModal2(true)}>
                 Read More
               </button>
             </div>
           </div>
         </div>
-
-        {/* Modal for modal1 */}
+        <div className="blogpost col-md-4 col-10 mt-5 mt-md-0 health all">
+          <div className="card">
+            <Image 
+              src="/images/games.png" 
+              className="card-img-top rounded-4" 
+              alt="Innovations in HealthTech" 
+              width={500} 
+              height={300} 
+            />
+            <div className="card-body px-4">
+              <small>By Shumaila Waheed</small>
+              <span className="ms-3">Mar 8, 2022</span>
+              <h4 className="card-title">
+                <a href="#">Innovations in intresting Games in 2024</a>
+              </h4>
+              <p className="text-muted">
+              Explore the cutting-edge innovations shaping the future of gaming, from immersive virtual reality experiences to AI-driven gameplay
+              </p>
+              <button className="read-more-btn link" onClick={() => setModal2(true)}>
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
         {modal1 && (
           <div className="modal fade show d-block" id="exampleModal1" aria-hidden="false">
             <div className="modal-dialog">
@@ -83,11 +103,57 @@ export default function Blog() {
                     />
                   </div>
                   <div className="content mt-3">
-                    <small>By Pawan Kumavat</small>
-                    <span className="text-muted ms-2">Mar 8, 2022</span>
+                    <small>By Shumaila Waheed</small>
+                    <span className="text-muted ms-2">Mar 8, 2024</span>
                     <h4 className="card-title mt-3">Exploring Innovative Food Trends in 2022</h4>
                     <p className="text-muted mt-3">
                       A deeper look at the top culinary trends that are reshaping how we experience food in today&apos;s dynamic world.
+                    </p>
+                  </div>
+                </div>
+                <div className="contact-form ms-3 mt-3 pb-4 px-2">
+                  <div className="mb-3">
+                    <input type="text" className="form-control" placeholder="Name" />
+                  </div>
+                  <div className="mb-3">
+                    <input type="email" className="form-control" placeholder="E-mail" />
+                  </div>
+                  <div className="mb-3">
+                    <input type="text" className="form-control" placeholder="Mobile No." />
+                  </div>
+                  <div className="mb-3">
+                    <textarea className="form-control" placeholder="Message"></textarea>
+                  </div>
+                  <button className="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {modal2 && (
+          <div className="modal fade show d-block" id="exampleModal2" aria-hidden="false">
+            <div className="modal-dialog">
+              <div className="modal-content">
+                <button type="button" className="btn-close" onClick={() => setModal2(false)}></button>
+                <div className="modal-body px-4">
+                  <div className="img">
+                    <Image 
+                      src="/images/finance.png" 
+                      className="img-fluid" 
+                      alt="Digital Transformation in Finance" 
+                      width={500} 
+                      height={300} 
+                    />
+                  </div>
+                  <div className="content mt-3">
+                    <small>By Pawan Kumavat</small>
+                    <span className="text-muted ms-2">Mar 8, 2022</span>
+                    <h4 className="card-title mt-3">Digital Transformation in Games</h4>
+                    <p className="text-muted mt-3">
+                      Learn how digital solutions like currency converters are revolutionizing financial processes for users worldwide.
                     </p>
                   </div>
                 </div>
